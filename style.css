@@ -17,7 +17,7 @@ body{
 }
 
 .item {
-  height: 30px;
+  min-height: 30px;
   width: 30px;
   border: 1px solid #e8e4e6;
   background-color: #abd1c6;
@@ -31,39 +31,58 @@ body{
 }
 
 .flex{
-  
+  display: flex;
 }
 
 .infl {
-  
+  display: inline-flex;
 }
 
 .start {
-
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .end {
-
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
 }
 
 .center {
-
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .around {
-
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: space-around;
 }
 
 .between {
-
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-between;
 }
 
 .side {
-
+  /*
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 80px;
+  */
+  flex: 1 2 80px;
 }
 
 .middle {
-
+  /*
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 40px;
+  */
+  flex: 2 1 40px;
 }
 
 
